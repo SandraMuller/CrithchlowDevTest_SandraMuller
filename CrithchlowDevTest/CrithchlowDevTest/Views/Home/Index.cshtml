@@ -1,0 +1,41 @@
+﻿<div class="jumbotron">
+    <h2>Critchlow Developer Test - Sandra Muller</h2>
+</div>
+
+<div id="main">
+    <div class="table-responsive">
+        <table id="myTable" class="display table" width="100%">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Currency</th>
+                    <th>Units Available</th>
+                </tr>
+            </thead>
+            <tbody id="tableInfo"></tbody>
+        </table>
+    </div>
+</div>
+
+<div id="product" style="display: none;">
+    <div id="tabs">
+        <ul>
+            <li><a href="#tabs-1">Details</a></li>
+            <li><a href="#tabs-2">Related Products</a></li>
+            <li><a href="#tabs-3">Reviews</a></li>
+        </ul>
+        <div id="tabs-1">
+            <table></table>
+        </div>
+        <div id="tabs-2"></div>
+        <div id="tabs-3"></div>
+    </div></br>
+    <button id="btnBuy"  onclick="BuyPopup();">Buy</button>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        PopulateTable();
+    });
+</script>
